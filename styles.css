@@ -389,7 +389,6 @@ nav .bi{
 @media only screen and (max-width: 600px){
   #header{
     background-image: url(Assets/smallscreenFinal.jpg);
-    background-size:auto;
   }
   .header-container-text{
     margin-top:100px;
