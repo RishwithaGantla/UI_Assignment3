@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="loadingAnimation.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- Loading Animation Content Starts here -->
+  <div id="loading-animation">
+    <h1><div id="loading-text">Loading...</div></h1>
+    <div class="wrapper">
+      <div class="candles">
+        <div class="light__wave"></div>
+        <div class="candle1">
+          <div class="candle1__body">
+            <div class="candle1__eyes">
+              <span class="candle1__eyes-one"></span>
+              <span class="candle1__eyes-two"></span>
+            </div>
+            <div class="candle1__mouth"></div>
+          </div>
+          <div class="candle1__stick"></div>
+        </div>
+        <div class="candle2">
+          <div class="candle2__body">
+            <div class="candle2__eyes">
+              <div class="candle2__eyes-one"></div>
+              <div class="candle2__eyes-two"></div>
+            </div>
+          </div>
+          <div class="candle2__stick"></div>
+        </div>
+        <div class="candle2__fire"></div>
+        <div class="sparkles-one"></div>
+        <div class="sparkles-two"></div>
+        <div class="candle__smoke-one">
+        </div>
+        <div class="candle__smoke-two">
+        </div>
+      </div>
+      <div class="floor">
+      </div>
+    </div>
+  </div>
+<!-- Loading Animation Content Ends here -->
+
+<!-- Main Content Starts here -->
+  <div id="content" class="hidden">
+    <header id="header">
+      <div class="header-container">
+        <nav>
+          <img src="Assets/logo-white.png" class="nameLogo" alt="Name-logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#profile-section">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="bi bi-x-lg" onclick="closemenu()"></i>
+          </ul>
+          <i class="bi bi-list" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-container-text">
+          <p>Master’s Student | Software Developer</p>
+          <h1>Welcome! To My <span>Portfolio</span>!</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="profile-section">
+        <div class="profile-section-container">
+          <div class="about-row">
+            <div class="ps-container-one">
+              <img src="Assets/Profile.jpg">
+            </div>
+
+            <div class="ps-container-two">
+              <h1 class="about-me-heading">About Me</h1>
+              <p>Hey there! Myself <span>Rishwitha Gantla.</span> I’m currently pursuing a Master’s degree in
+                Information Systems
+                at Pace University, with a graduation date set for May 2025.
+                I’m a passionate technologist and automation enthusiast with over three
+                years of experience in the IT industry, specializing in Quality Assurance
+                and Automation Testing.</p>
+              <div class="about-me-section">
+                <div class="ams-tiles active-tile" onclick="opentab('skills')">Skills</div>
+                <div class="ams-tiles" onclick="opentab('education')">Education</div>
+                <div class="ams-tiles" onclick="opentab('experience')">Experience</div>
+              </div>
+
+              <div class="tile-contents active-content" id="skills">
+                <ul>
+                  <li><span>Software Development</span><br>WebApp Development using Dot Net</li>
+                  <li><span>Software Testing</span><br>UI and Database Testing</li>
+                  <li><span>SAP</span><br>SAP Finance & SD</li>
+                </ul>
+              </div>
+              <div class="tile-contents" id="education">
+                <ul>
+                  <li><span>2015-2019</span><br>Bachelors in Electrical and Electronics</li>
+                  <li><span>2023-2025</span><br>Masters in Information Systems</li>
+
+                </ul>
+              </div>
+              <div class="tile-contents" id="experience">
+                <ul>
+                  <li><span>Prolifics 2019-23</span><br>Software Developer</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div class="project-container">
+          <h1 class="about-me-heading">Projects</h1>
+          <div class="projects-list">
+            <div>
+              <i class="bi bi-shop"></i>
+              <h2>E-commerce Marketplace for Print on Demand</h2>
+              <p>This project aims to establish an E-commerce platform, titled "Print n Purchase", where designers
+                can showcase and sell their T-shirt designs, while customers can easily browse and buy these
+                designs. The platform promotes collaboration between designers and consumers, enabling them to
+                create and choose designs based on specific requirements.
+                It emphasizes the key aspects of Information Systems Design and Development, such as the
+                effective implementation of the Systems Development Life Cycle (SDLC), emphasizing the
+                importance of system structure, requirement gathering, project initiation, planning, and
+                management. Furthermore, the technical foundation of the project is rooted in a web platform that
+                seamlessly integrates payment processing and Print on Demand T-shirt factory APIs.</p>
+              <a href="https://github.com/RishwithaGantla/E-commerce-Marketplace-for-Print-on-Demand">Learn More!</a>
+            </div>
+            <div>
+              <i class="bi bi-journal-bookmark"></i>
+              <h2>Case Study - Bring Your Own Device</h2>
+              <p>This case study is about a rule called Bring Your Own Device
+                (BYOD) at work, where employees can use their own smartphones for
+                work. It talks about the good things and the problems that can
+                happen with BYOD. People like using their own smartphones at work
+                because it gives them more freedom and saves money for the
+                company. But there are also problems with BYOD if it's not managed
+                well. Personal phones are more expensive and require more
+                maintenance than business phones, which makes it more challenging
+                to protect corporate data. Also, Businesses find it hard to handle
+                different types of phones and systems. Specifically, Android
+                phones are more complex due to their several versions and
+                open-source features. This makes them harder to use than Apple's
+                iPhones.</p>
+              <a href="https://github.com/RishwithaGantla/Case-Study---Bring-Your-Own-Device">Learn More!</a>
+            </div>
+            <div>
+              <i class="bi bi-router-fill"></i>
+              <h2>IoT Based Smart Automation</h2>
+              <p>The Internet of Things (IoT) is a significant advancement in digital transformation, redefining modern
+                living and business. It connects virtual and physical layers, giving people more control and
+                opportunities to stay connected. The smart home is an example of how IoT technologies work together and
+                independently. This explores the implementation of an IoT smart home network using a Cisco Packet Tracer
+                simulation, envisioning a future where smart homes are connected with corporate data communications,
+                becoming a home-like and economically reasonable habitat. The technical complexities of such a
+                multifunctional network are explored, suggesting a potential future where smart networked home systems
+                could be essential for corporate change and consumer dialogue.</p>
+              <a href="https://github.com/RishwithaGantla/IoT-Based-Smart-Automation">Learn More!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <div class="portfolio-container">
+          <h1 class="about-me-heading">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="Assets/img1.jpg">
+              <div class="layer">
+                <h3>E-commerce Marketplace for Print on Demand</h3>
+                <p>This project aims to establish an E-commerce platform, titled "Print n Purchase", where designers
+                  can showcase and sell their T-shirt designs, while customers can easily browse and buy these
+                  designs.</p>
+                <a href="https://github.com/RishwithaGantla/E-commerce-Marketplace-for-Print-on-Demand"><i
+                    class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="Assets/case-study.jpeg">
+              <div class="layer">
+                <h3>Case Study - Bring Your Own Device</h3>
+                <p>This case study is about a rule called Bring Your Own Device
+                  (BYOD) at work, where employees can use their own smartphones for
+                  work.</p>
+                <a href="https://github.com/RishwithaGantla/Case-Study---Bring-Your-Own-Device"><i
+                    class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="Assets/iot.png">
+              <div class="layer">
+                <h3>IoT Based Smart Automation</h3>
+                <p>The Internet of Things (IoT) is a significant advancement in digital transformation, redefining
+                  modern
+                  living and business. It connects virtual and physical layers, giving people more control and
+                  opportunities to stay connected.</p>
+                <a href="https://github.com/RishwithaGantla/IoT-Based-Smart-Automation"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/RishwithaGantla" class="btn">See more</a>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="contact-container">
+          <div class="about-row">
+            <div class="contact-left">
+              <h1 class="about-me-heading">Contact Me </h1>
+              <p><i class="bi bi-send"></i> rg68626n@pace.edu</p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+              <a href="/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message!"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </main>
+    <div class="footer-section">
+      <p><a href="https://www.linkedin.com/in/rishwitha-reddy-910312205/"><i class="bi bi-linkedin"></i> Linkedln</a>
+        <a href="https://github.com/RishwithaGantla"><i class="bi bi-github"></i> Github</a>
+      </p>
+    </div>
+  </div>
+<!-- Main Content Ends here -->
+  <script src="dist/script.js"></script>
+  <script>
+    var amslinks = document.getElementsByClassName("ams-tiles");
+    var tilecontents = document.getElementsByClassName("tile-contents");
+    var sidemenu = document.getElementById("sidemenu");
+
+    function opentab(tileName) {
+      for (amslink of amslinks) {
+        amslink.classList.remove("active-tile");
+      }
+      for (tilecontent of tilecontents) {
+        tilecontent.classList.remove("active-content");
+      }
+
+      event.currentTarget.classList.add("active-tile");
+      document.getElementById(tileName).classList.add("active-content");
+
+
+    }
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+
+  </script>
+
+</body>
+
+</html>
